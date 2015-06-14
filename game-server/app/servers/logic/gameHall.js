@@ -4,6 +4,7 @@
 
 var pomelo = require('pomelo');
 var GamePanel = require('./gamePanel.js');
+var Constant = require('./global.js');
 var Uid = require('../../util/uid.js');
 var id = 0;
 var panelList = {};
@@ -14,14 +15,16 @@ exports.init = function(gameHallId) {
     id = gameHallId;
     var firstPanelId = panelIdGenerator.getUid();
     panelList[firstPanelId] = new GamePanel(this);
-    setInterval(update, 100);
+    setInterval(update, 1000 / Constant.globals.frameRate);
 };
 
 
 var panelIdGenerator = new Uid();
 
 var update = function() {
-  //TODO add the executions in each frame.
+    for (var panel in panelList) {
+        panelList[panel].update();
+    }
 };
 
 exports.getChannelService = function() {
@@ -33,17 +36,15 @@ exports.getChannelService = function() {
 var getChannelService = exports.getChannelService;
 
 exports.addPlayerToPanel = function(playerId, panelId) {
-    if (panelId === undefined) {
-        var minNumber = 100000;
-        var minPanel = null;
-        for(var panel in panelList) {
-            if (panel.getPlayersNumber() < minNumber) {
-                minNumber = panel.getPlayersNumber();
-                minPanel = panel;
-            }
-        }
-        panel.addPlayer(playerId);
-    } else {
-        panelList[panelId].addPlayer(playerId);
-    }
+    if (panelId === undefined) panelId = 0;
+    panelList[panelId].addPlayer(playerId);
+    playerList[playerId] = panelList[panelId];
+};
+
+exports.playerEject = function(playerId, angleVector) {
+    return playerList[playerId].playerEject(playerId, angleVector);
+};
+
+exports.getPanelByPlayerId = function(playerId) {
+    return playerList[playerId];
 };
