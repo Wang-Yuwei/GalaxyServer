@@ -21,10 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="playerHandler.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playerHandler.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/servers/gameHall/handler/playerHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94423795">
+            <state vertical-scroll-proportion="0.0">
               <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding>
                 <element signature="e#0#36#0" expanded="false" />
@@ -93,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="servers.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="servers.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6419753">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.7045952">
+              <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -143,13 +143,13 @@
         <option value="$PROJECT_DIR$/game-server/app/servers/logic/global.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/gameHall/remote/playerRemote.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/logic/aster.js" />
-        <option value="$PROJECT_DIR$/game-server/config/servers.json" />
         <option value="$PROJECT_DIR$/game-server/app.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/logic/connection.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/logic/gameHall.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/logic/gamePanel.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/gameHall/handler/playerHandler.js" />
+        <option value="$PROJECT_DIR$/game-server/config/servers.json" />
       </list>
     </option>
   </component>
@@ -861,14 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6419753">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -911,11 +903,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/servers/gameHall/handler/playerHandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94423795">
+        <state vertical-scroll-proportion="0.0">
           <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding>
             <element signature="e#0#36#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7045952">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

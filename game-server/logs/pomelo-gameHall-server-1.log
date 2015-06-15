@@ -497,3 +497,423 @@
 [2015-06-15 22:03:15.443] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/modules/monitorwatcher.js] [39m[gameHall-server-1] receive addServer signal: {"action":"addServer","server":{"main":"/home/wyw/Documents/Galaxy/game-server/app.js","env":"development","id":"connector-server-1","host":"192.168.184.135","port":3150,"clientPort":3010,"frontend":"true","serverType":"connector","pid":45831}}
 [2015-06-15 22:03:15.460] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/modules/monitorwatcher.js] [39m[gameHall-server-1] receive addServer signal: {"action":"addServer","server":{"main":"/home/wyw/Documents/Galaxy/game-server/app.js","env":"development","id":"connector-server-2","host":"192.168.184.135","port":3151,"clientPort":3011,"frontend":"true","serverType":"connector","pid":45832}}
 [2015-06-15 22:03:15.467] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/modules/monitorwatcher.js] [39m[gameHall-server-1] receive addServer signal: {"action":"addServer","server":{"main":"/home/wyw/Documents/Galaxy/game-server/app.js","env":"development","id":"gate-server-1","host":"192.168.184.135","port":3350,"clientPort":3014,"frontend":"true","serverType":"gate","pid":45836}}
+[2015-06-15 23:46:43.663] [INFO] pomelo - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/application.js] [39mapplication inited: "gameHall-server-1"
+[2015-06-15 23:46:46.939] [INFO] pomelo - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/application.js] [39m"gameHall-server-1" enter after start...
+[2015-06-15 23:46:46.940] [INFO] pomelo - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/application.js] [39m"gameHall-server-1" finish start
+[2015-06-15 23:46:46.941] [INFO] pomelo - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/application.js] [39m"gameHall-server-1" startup in 3206 ms
+[2015-06-15 23:46:46.958] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/modules/monitorwatcher.js] [39m[gameHall-server-1] receive addServer signal: {"action":"addServer","server":{"main":"/home/wyw/Documents/Galaxy/game-server/app.js","env":"development","id":"gate-server-1","host":"192.168.184.135","port":3350,"clientPort":3014,"frontend":"true","serverType":"gate","pid":46999}}
+[2015-06-15 23:48:50.975] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":12,"aster":{"position":{"x":666.038096009288,"y":506.29924974637106},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":5}}, groups: {"1":["11"]}, opts: undefined
+[2015-06-15 23:48:50.990] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:48:54.694] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":12,"angleVector":{"x":0.1391274270915624,"y":-0.9902744867110744},"asterId":6}, groups: {"1":["11"]}, opts: undefined
+[2015-06-15 23:48:54.698] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:49:46.542] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":21,"aster":{"position":{"x":552.7873530052602,"y":150.62032672576606},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":7}}, groups: {"1":["11"],"2":["12"]}, opts: undefined
+[2015-06-15 23:49:46.559] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:49:46.563] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:51:45.357] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":22,"aster":{"position":{"x":878.2724350923672,"y":187.8945284173824},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":8}}, groups: {"1":["11","21"],"2":["12"]}, opts: undefined
+[2015-06-15 23:51:45.360] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:51:45.361] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:52:07.239] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":31,"aster":{"position":{"x":539.1902635456063,"y":688.7319867732003},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":9}}, groups: {"1":["11","21"],"2":["12","22"]}, opts: undefined
+[2015-06-15 23:52:07.260] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:52:07.263] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:53:11.887] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":32,"aster":{"position":{"x":90.60768691124395,"y":613.9875933644362},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":10}}, groups: {"1":["11","21","31"],"2":["12","22"]}, opts: undefined
+[2015-06-15 23:53:11.889] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:53:11.891] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:53:32.790] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":41,"aster":{"position":{"x":453.38596652727574,"y":569.4296025088988},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":11}}, groups: {"1":["11","21","31"],"2":["12","22","32"]}, opts: undefined
+[2015-06-15 23:53:32.791] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:53:32.794] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:53:59.509] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":42,"aster":{"position":{"x":972.6860628463328,"y":498.6225532833487},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":12}}, groups: {"1":["11","21","31","41"],"2":["12","22","32"]}, opts: undefined
+[2015-06-15 23:53:59.511] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:53:59.514] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:54:01.560] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":42,"angleVector":{"x":-0.9781055028153008,"y":-0.20810964745159535},"asterId":13}, groups: {"1":["11","21","31","41"],"2":["12","22","32"]}, opts: undefined
+[2015-06-15 23:54:01.564] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:54:01.566] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:54:07.512] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":42,"angleVector":{"x":0.8172601539069394,"y":0.5762688962940876},"asterId":14}, groups: {"1":["11","21","31","41"],"2":["12","22","32"]}, opts: undefined
+[2015-06-15 23:54:07.513] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:54:07.514] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:54:10.966] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":42,"angleVector":{"x":-0.35113121575827594,"y":0.9363262622185256},"asterId":15}, groups: {"1":["11","21","31","41"],"2":["12","22","32"]}, opts: undefined
+[2015-06-15 23:54:10.969] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:54:10.971] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:54:11.917] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":42,"angleVector":{"x":0.8462357154153017,"y":0.5328087029652879},"asterId":16}, groups: {"1":["11","21","31","41"],"2":["12","22","32"]}, opts: undefined
+[2015-06-15 23:54:11.920] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:54:11.923] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:55:13.439] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":51,"aster":{"position":{"x":972.2671322175302,"y":257.58905322290957},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":17}}, groups: {"1":["11","21","31","41"],"2":["12","22","32","42"]}, opts: undefined
+[2015-06-15 23:55:13.441] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:55:13.442] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:55:22.043] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":51,"angleVector":{"x":0.5999984949717834,"y":0.8000011287689504},"asterId":18}, groups: {"1":["11","21","31","41"],"2":["12","22","32","42"]}, opts: undefined
+[2015-06-15 23:55:22.046] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:55:22.050] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:55:23.781] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":51,"angleVector":{"x":-0.08421731561434,"y":0.9964474114325927},"asterId":19}, groups: {"1":["11","21","31","41"],"2":["12","22","32","42"]}, opts: undefined
+[2015-06-15 23:55:23.782] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:55:23.783] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:56:19.505] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":52,"aster":{"position":{"x":561.957194423303,"y":680.1040008780546},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":20}}, groups: {"1":["11","21","31","41","51"],"2":["12","22","32","42"]}, opts: undefined
+[2015-06-15 23:56:19.508] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:56:19.509] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:57:57.323] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onNewPlayer, msg: {"playerId":61,"aster":{"position":{"x":560.5444518267177,"y":379.4193468405865},"velocity":{"x":0,"y":0},"radius":50,"property":0,"asterId":21}}, groups: {"1":["11","21","31","41","51"],"2":["12","22","32","42","52"]}, opts: undefined
+[2015-06-15 23:57:57.325] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:57:57.326] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.addPlayer (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:153:43)
+[2015-06-15 23:58:05.129] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":61,"angleVector":{"x":-0.9963757751077855,"y":-0.08506065352652524},"asterId":22}, groups: {"1":["11","21","31","41","51"],"2":["12","22","32","42","52"]}, opts: undefined
+[2015-06-15 23:58:05.131] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:58:05.134] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:58:14.938] [DEBUG] pomelo - [36m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[gameHall-server-1] channelService sendMessageByGroup route: onPlayerEject, msg: {"playerId":61,"angleVector":{"x":-0.9938834162739857,"y":-0.11043439163390813},"asterId":23}, groups: {"1":["11","21","31","41","51"],"2":["12","22","32","42","52"]}, opts: undefined
+[2015-06-15 23:58:14.940] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 1, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
+[2015-06-15 23:58:14.943] [ERROR] pomelo - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js] [39m[pushMessage] fail to dispatch msg to serverId: 2, err:Error: rpc failed with error code: 2
+    at failfast (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:151:27)
+    at module.exports (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js:24:10)
+    at EventEmitter.emit (events.js:106:17)
+    at pro.dispatch (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js:220:12)
+    at pro.rpcInvoke (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/client.js:172:17)
+    at /home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:434:13
+    at sendMessage (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:437:7)
+    at sendMessageByGroup (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:444:7)
+    at ChannelService.pushMessageByUids (/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/lib/common/service/channelService.js:121:3)
+    at Object.gamePanel.playerEject (/home/wyw/Documents/Galaxy/game-server/app/servers/logic/gamePanel.js:94:43)
