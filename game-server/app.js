@@ -23,7 +23,7 @@ app.configure('production|development', 'gameHall', function() {
     if (!gameHallId && gameHallId < 0) {
         throw new Error('Load game hall config failed.');
     }
-    gameHall.init();
+    gameHall.init(gameHallId);
 });
 
 app.start();
