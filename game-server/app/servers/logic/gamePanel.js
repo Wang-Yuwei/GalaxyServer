@@ -5,13 +5,14 @@ var Constant = require('./global.js');
 var globals = Constant.globals;
 var Guid = require('../../util/uid.js');
 var Aster = require('./aster.js');
-module.exports = function() {
-    return new gamePanel();
+module.exports = function(gameHall) {
+    return new gamePanel(gameHall);
 };
 
-gamePanel = function() {
+gamePanel = function(gameHall) {
     this.asterList = {};
     this.playerList = {};
+    this.gameHall = gameHall;
     this.guid = new Guid();
 };
 
@@ -24,6 +25,7 @@ gamePanel.prototype = {
             this.asterList[asterId].move();
         }
         this.handleAstersCollision();
+        this.handleWallsCollision();
     },
 
     createRandomAster: function() {
@@ -88,6 +90,8 @@ gamePanel.prototype = {
             y: ((m1 + m2) * aster.velocity.y - m2 * ejectVelocity.y) / m1
         };
         this.asterList[newAster.asterId] = newAster;
+
+        this.gameHall.getChannelService().pushMessageByUids('onPlayerEject', {playerId: playerId, angleVector: angleVector, asterId: newAster.asterId}, this.getOtherPlayers(playerId));
         return newAster.asterId;
     },
     absorbAster: function(aster1, aster2) {
@@ -145,6 +149,42 @@ gamePanel.prototype = {
         });
         this.playerList[playerId] = aster.asterId;
         this.asterList[aster.asterId] = aster;
+
+
+        this.gameHall.getChannelService().pushMessageByUids('onNewPlayer', {playerId: playerId, aster: aster}, this.getOtherPlayers(playerId));
         return true;
+    },
+
+    handleWallsCollision: function () {
+        for (var i in this.asterList) {
+            var aster = this.asterList[i];
+            var x = aster.position.x, y = aster.position.y;
+            var v = aster.velocity;
+            var r = aster.radius;
+            if (x < r && v.x < 0) {
+                aster.position.x = 2 * r - x;
+                aster.reverseVelocityX();
+            } else if (x + r > globals.playground.width && v.x > 0) {
+                aster.position.x = 2 * globals.playground.width - aster.position.x - 2 * r;
+                aster.reverseVelocityX();
+            } else if (y < r && v.y < 0) {
+                aster.position.y = 2 * r - y;
+                aster.reverseVelocityY();
+            } else if (y + r > globals.playground.height && v.y > 0) {
+                aster.position.y = 2 * globals.playground.height - aster.position.y - 2 * r;
+                aster.reverseVelocityY();
+            }
+        }
+    },
+
+    getOtherPlayers: function(playerId) {
+        var uids = [];
+        for (var id in this.playerList) {
+            if (id != playerId) {
+                uids.push(id);
+            }
+        }
+        return uids;
     }
+
 };

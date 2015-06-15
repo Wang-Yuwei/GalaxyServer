@@ -373,3 +373,9 @@
 [2015-06-15 20:13:00.998] [INFO] pomelo-admin - [32m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-admin\lib\consoleService.js] [39mtry to connect master: "connector", "127.0.0.1", 3005
 [2015-06-15 20:13:01.020] [INFO] pomelo-admin - [32m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-admin\lib\consoleService.js] [39mtry to connect master: "connector", "127.0.0.1", 3005
 [2015-06-15 20:13:01.044] [INFO] pomelo-admin - [32m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-admin\lib\consoleService.js] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2015-06-15 20:46:04.192] [INFO] pomelo-admin - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-admin/lib/consoleService.js] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2015-06-15 20:46:54.069] [INFO] pomelo-admin - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-admin/lib/consoleService.js] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2015-06-15 20:46:54.927] [INFO] pomelo-admin - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-admin/lib/consoleService.js] [39mtry to connect master: "gameHall", "127.0.0.1", 3005
+[2015-06-15 20:46:55.007] [INFO] pomelo-admin - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-admin/lib/consoleService.js] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2015-06-15 20:46:55.008] [INFO] pomelo-admin - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-admin/lib/consoleService.js] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2015-06-15 20:46:55.015] [INFO] pomelo-admin - [32m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-admin/lib/consoleService.js] [39mtry to connect master: "gate", "127.0.0.1", 3005

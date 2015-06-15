@@ -45,6 +45,13 @@ exports.playerEject = function(playerId, angleVector) {
     return playerList[playerId].playerEject(playerId, angleVector);
 };
 
+exports.removePlayer = function(playerId) {
+    if (playerList[playerId]) {
+        playerList[playerId].removePlayer(playerId);
+        delete playerList[playerId];
+    }
+};
+
 exports.getPanelByPlayerId = function(playerId) {
     return playerList[playerId];
 };
