@@ -135,8 +135,8 @@ gamePanel.prototype = {
 
         var aster = new Aster({
             position: {
-                x: Math.random() * globals.playground.width,
-                y: Math.random() * globals.playground.height
+                x: Math.random() * (globals.playground.width - 50) + 25,
+                y: Math.random() * (globals.playground.height - 50) + 25
             },
             velocity: {
                 x: 0,
