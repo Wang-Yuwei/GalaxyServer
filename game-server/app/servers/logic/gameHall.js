@@ -9,7 +9,7 @@ var Uid = require('../../util/uid.js');
 var id = 0;
 var panelList = {};
 var playerList = {};
-var channelService = null;
+var channelService = pomelo.app.get('channelService');
 
 exports.init = function(gameHallId) {
     id = gameHallId;
