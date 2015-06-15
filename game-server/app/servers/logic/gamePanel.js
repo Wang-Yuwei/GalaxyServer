@@ -144,8 +144,7 @@ gamePanel.prototype = {
             },
             radius: 50,
             property: Constant.ASTERPROPERTY.NEUTRAL,
-            asterId: this.guid.getUid(),
-            layer: this.layer
+            asterId: this.guid.getUid()
         });
         this.playerList[playerId] = aster.asterId;
         this.asterList[aster.asterId] = aster;

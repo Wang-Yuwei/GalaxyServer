@@ -27,5 +27,18 @@ Handler.prototype = {
         console.log(msg);
         var asterId = gameHall.playerEject(session.get('playerId'), msg.angleVector);
         next(null, asterId);
+    },
+
+    updateData: function(msg, session, next) {
+        var playerId = session.get('playerId');
+        var panel = gameHall.getPanelByPlayerId(playerId);
+        if (panel == undefined) {
+            next(null, {error: 'no player'});
+        } else {
+            next(null, {
+                playerList: panel.playerList,
+                asterList: panel.asterList
+            })
+        }
     }
 };
