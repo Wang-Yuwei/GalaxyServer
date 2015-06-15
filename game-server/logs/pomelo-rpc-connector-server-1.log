@@ -186,6 +186,7 @@
 [2015-06-14 23:04:15.268] [ERROR] pomelo-rpc - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailboxes/ws-mailbox.js] [39mrpc callback timeout, remote server host: 192.168.184.135, port: 3250
 [2015-06-14 23:04:15.268] [ERROR] pomelo-rpc - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailstation.js] [39m[pomelo-rpc] fail to send message
 [2015-06-14 23:04:15.269] [ERROR] pomelo-rpc - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/failureProcess.js] [39mrpc failed with error, remote server: gameHall-server-1, msg: {"namespace":"user","serverType":"gameHall","service":"playerRemote","method":"playerLeave","args":[]}, error code: 5
+<<<<<<< Updated upstream
 [2015-06-14 23:21:44.836] [WARN] pomelo-rpc - [33m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\ws-mailbox.js] [39mrpc request is timeout, id: 21, host: 127.0.0.1, port: 3250
 [2015-06-14 23:21:44.837] [ERROR] pomelo-rpc - [31m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\ws-mailbox.js] [39mrpc callback timeout, remote server host: 127.0.0.1, port: 3250
 [2015-06-14 23:21:44.837] [ERROR] pomelo-rpc - [31m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js] [39m[pomelo-rpc] fail to send message
@@ -509,3 +510,6 @@
 [2015-06-15 20:11:46.030] [ERROR] pomelo-rpc - [31m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\ws-mailbox.js] [39mrpc callback timeout, remote server host: 192.168.1.2, port: 3250
 [2015-06-15 20:11:46.031] [ERROR] pomelo-rpc - [31m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js] [39m[pomelo-rpc] fail to send message
 [2015-06-15 20:11:46.031] [ERROR] pomelo-rpc - [31m[E:\Codes\Git\GalaxyServer\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\failureProcess.js] [39mrpc failed with error, remote server: gameHall-server-1, msg: {"namespace":"user","serverType":"gameHall","service":"playerRemote","method":"playerLeave","args":[]}, error code: 5
+=======
+[2015-06-15 20:01:30.401] [ERROR] pomelo-rpc - [31m[/home/wyw/Documents/Galaxy/game-server/node_modules/pomelo/node_modules/pomelo-rpc/lib/rpc-client/mailboxes/ws-mailbox.js] [39mrpc socket is disconnect, reason: booted
+>>>>>>> Stashed changes
