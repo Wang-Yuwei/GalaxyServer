@@ -181,7 +181,10 @@ gamePanel.prototype = {
         var uids = [];
         for (var id in this.playerList) {
             if (id != playerId) {
-                uids.push(id);
+                uids.push({
+                    uid: id,
+                    sid: id % 10
+                });
             }
         }
         return uids;
